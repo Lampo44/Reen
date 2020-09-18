@@ -200,6 +200,9 @@ ul, ol{
 .owl-theme .owl-dots .owl-dot span {
     background: #506a85;
 }
+.owl-theme .owl-dots button:focus{
+    outline: none;
+}
 .owl-theme .owl-nav{
     visibility: hidden;
 }
