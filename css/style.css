@@ -291,6 +291,7 @@ ul, ol{
 .subscribe input::placeholder{
     color: #a3b1bf;
     padding-left: 5px;
+    margin-left: 5px;
 }
 .subscribe input:focus{
     outline: none;
