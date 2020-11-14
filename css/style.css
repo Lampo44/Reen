@@ -53,6 +53,18 @@ ul, ol{
 .header-bottom{
     padding: 30px;
 }
+.bg-light{
+    background: transparent !important;
+}
+ul.navbar-nav{
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+li.nav-item.active{
+    margin-left: 20%;
+}
 .navigation-container{
     display: flex;
     justify-content: space-between;
@@ -328,4 +340,7 @@ ul, ol{
 }
 .footer-list-items ul li{
     padding: 0px 10px;
+}
+.doom{
+    
 }
