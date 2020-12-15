@@ -14,36 +14,36 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Main CSS below -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Media Query CSS -->
+    <link rel="stylesheet" href="css/media-query.css">
     <title>REEN | Home</title>
 </head>
 <body>
   <!-- Header section start -->
   <header class="main-header">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="header-upper">
-          <div class="container">
-            <div class="header-upper-content">
-              <div class="header-upper-left-content">
-                  <a href="#"><i class="fa fa-envelope-o"></i><span>info@reen.com</span></a>
-                  <a href="#"><i class="fa fa-mobile"></i><span>+00 (123) 456 78 90</span></a>
-              </div>
-              <div class="header-upper-right-content">
-                <ul class="header-social-icons">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                  <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-              </div>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="header-upper-left-content">
+              <a href="#"><i class="fa fa-envelope-o"></i><span>info@reen.com</span></a>
+              <a href="#"><i class="fa fa-mobile"></i><span>+00 (123) 456 78 90</span></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="header-upper-right-content">
+            <ul class="header-social-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="header-bottom">
+    <div class="header-bottom" id="sticker">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
@@ -52,7 +52,7 @@
           </button>
               
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav px-xl-5 mx-auto mb-2 mb-lg-0">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
@@ -90,7 +90,7 @@
     <div class="carousel-inner">
       <div class="header-and-caption">
         <h1>Made for Designers</h1>
-        <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN<br> website template. Customize your site with versatile and easy to use features.</p>
+        <p class="px-xl-5">Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
         <div class="btn btn-info"><a href="#">get started now</a></div>
       </div>
       <div class="carousel-item active">
@@ -118,18 +118,18 @@
   <section class="feature-main">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="header-and-caption feature-section">
+        <div class="col-md-12 py-5">
+          <div class="feature-section text-center p-4">
             <h1>Beautiful. Clean. Responsive.</h1>
             <p>REEN is a high-quality solution for those who want a beautiful website in no time.
-              <br> It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it 
-              <br> doesn't matter. Your content will always looks its absolute best.
+              It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it 
+              doesn't matter. Your content will always looks its absolute best.
             </p>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row pb-5">
+        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0">
           <div class="feature-inner">
             <i class="fa fa-heart-o"></i>
             <div class="feature-header-and-para">
@@ -138,7 +138,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0">
           <div class="feature-inner">
             <i class="fa fa-lightbulb-o"></i>
             <div class="feature-header-and-para">
@@ -147,7 +147,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0">
           <div class="feature-inner">
             <i class="fa fa-star-o"></i>
             <div class="feature-header-and-para">
@@ -165,10 +165,10 @@
   <section class="portfolio">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="header-and-caption portfolio-inner">
+        <div class="col-md-12 py-4">
+          <div class="portfolio-inner text-center p-4">
             <h1>Check out our latest works</h1>
-            <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
+            <p class="py-2">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
           </div>
         </div>
       </div>
@@ -222,13 +222,13 @@
   <section class="work-with-us">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="header-and-caption work-with-us">
+        <div class="col-md-12 py-5">
+          <div class="work-with-us text-center p-4">
             <h1>Want to work with us?</h1>
-            <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.<br>
+            <p class="py-2">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
             Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
             </p>
-            <div class="btn btn-info">get in touch</div>
+            <div class="btn btn-info mt-2">get in touch</div>
           </div>
         </div>
       </div>
@@ -237,12 +237,12 @@
   <!-- Work-with-us Section End -->
 
   <!-- Footer Section Start -->
-  <section class="pre-footer">
+  <section class="pre-footer py-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-6 col-xl-3 py-4">
           <div class="footer-coulmn n1">
-            <h4>who we are</h4>
+            <h4 class="mb-4">who we are</h4>
             <img src="img/footerlogo.png" alt="...">
             <p class="footer-text">
               Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.
@@ -250,22 +250,22 @@
             <a href="#">More about us<i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="footer-coulmn n2">
-            <h4>latest works</h4>
-            <div class="footer-images r1">
+        <div class="col-md-6 col-xl-3 py-4">
+          <div class="footer-coulmn n2 row">
+            <h4 class="mb-4">latest works</h4>
+            <div class="col-md-12 pb-1">
               <img src="img/footerimage1.png" alt="...">
               <img src="img/footerimage2.png" alt="...">
             </div>
-            <div class="footer-images r2">
+            <div class="col-md-12">
               <img src="img/footerimage3.png" alt="...">
               <img src="img/footerimage4.png" alt="...">
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-xl-3 py-4">
           <div class="footer-coulmn n3">
-            <h4>get in touch</h4>
+            <h4 class="mb-4">get in touch</h4>
             <p>
               Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.
             </p>
@@ -278,9 +278,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-xl-3 py-4">
           <div class="footer-coulmn n4">
-            <h4>free updates</h4>
+            <h4 class="mb-4">free updates</h4>
             <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
             <div class="subscribe">
               <input type="text" name="email" placeholder="Enter your email address">
@@ -294,10 +294,10 @@
   <footer class="main-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <p>&copy; 2014 REEN. All rights reserved.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="footer-list-items">
             <ul>
               <li><a href="#">home</a></li>&middot;
@@ -317,11 +317,12 @@
   <!-- Optional JavaScript -->
   <!-- Jquery JS -->
   <script src="js/jquery.min.js"></script>
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
   <!-- Owl Carousel JS -->
   <script src="js/owl.carousel.min.js"></script>
+  <!-- sticky JS -->
+  <script src="js/jquery.sticky.js"></script>
   <script>
     $('.owl-carousel').owlCarousel({
       loop:true,
@@ -342,6 +343,12 @@
         }
       }
     })
+    $(document).ready(function(){
+      $("#sticker").sticky({
+        topSpacing:0,
+        zIndex:99
+      });
+    });
   </script>
 </body>
 </html>
