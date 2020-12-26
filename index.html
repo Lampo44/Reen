@@ -8,6 +8,8 @@
     <!-- Owl Carousel CSS below -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- AoS CSS below -->
+    <link rel="stylesheet" href="css/aos.css">
     <!-- Font Awesome CSS below -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Bootstrap CSS below -->
@@ -89,7 +91,7 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="header-and-caption">
-        <h1>Made for Designers</h1>
+        <h1 class="typed-strings"></h1>
         <p class="px-xl-5">Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
         <div class="btn btn-info"><a href="#">get started now</a></div>
       </div>
@@ -129,7 +131,7 @@
         </div>
       </div>
       <div class="row pb-5">
-        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0">
+        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0" data-aos="fade-right">
           <div class="feature-inner">
             <i class="fa fa-heart-o"></i>
             <div class="feature-header-and-para">
@@ -138,7 +140,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0">
+        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0" data-aos="zoom-in">
           <div class="feature-inner">
             <i class="fa fa-lightbulb-o"></i>
             <div class="feature-header-and-para">
@@ -147,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0">
+        <div class="col-md-12 col-lg-4 py-md-2 mx-4 mx-lg-0"  data-aos="fade-left">
           <div class="feature-inner">
             <i class="fa fa-star-o"></i>
             <div class="feature-header-and-para">
@@ -173,7 +175,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
           <div class="portfolio-card">
             <img src="img/card1.png" alt="...">
             <div class="portfolio-card-inner">
@@ -182,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left">
           <div class="portfolio-card">
             <img src="img/card2.png" alt="...">
             <div class="portfolio-card-inner">
@@ -314,7 +316,7 @@
   </footer>
   <!-- Footer Section End -->
 
-  <!-- Optional JavaScript -->
+  <!-- Mandatory JavaScripts -->
   <!-- Jquery JS -->
   <script src="js/jquery.min.js"></script>
   <!-- Bootstrap Bundle JS -->
@@ -323,14 +325,19 @@
   <script src="js/owl.carousel.min.js"></script>
   <!-- sticky JS -->
   <script src="js/jquery.sticky.js"></script>
+  <!-- AoS JS -->
+  <script src="js/aos.js"></script>
+  <!-- Type JS -->
+  <script src="js/typed.js"></script>
   <script>
+    // Owl Carousel
     $('.owl-carousel').owlCarousel({
       loop:true,
       margin:10,
       nav:true,
       margin:30,
       autoplay:true,
-      autoplayTimeout:3000,
+      autoplayTimeout:1500,
       responsive:{
         0:{
           items:1
@@ -343,11 +350,35 @@
         }
       }
     })
+    // Sticky
     $(document).ready(function(){
       $("#sticker").sticky({
         topSpacing:0,
         zIndex:99
       });
+    });
+    // AoS 
+    AOS.init({
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    // Typed 
+    var typed = new Typed('.typed-strings', {
+      strings: ["Made for Designers", "Especially Web Designers", "Made with Graphics Designers"],
+      typeSpeed: 30,
+      loop:true,
+      loopCount: Infinity,
+      backDelay: 700,
+      showCursor: true,
+      cursorChar: '|',
+      autoInsertCss: true,
+      backSpeed: 20
     });
   </script>
 </body>
